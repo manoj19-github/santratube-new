@@ -1,0 +1,90 @@
+@import "../../styles/_base.scss";
+.videoHorizontal{
+  border-bottom: 0.3px solid $border-color;
+  padding-left: 0 !important;
+  margin-top:1rem;
+  font-size: 0.8rem;
+  cursor:pointer;
+
+   &__left{
+     position: relative;
+     text-align: center;
+     width:100%;
+     margin:0;
+     padding:0;
+
+     &__thumbnail{
+       width:100%;
+       height:7rem;
+       margin:0;
+       padding:0;
+
+
+       &-wrapper{
+         width:100%;
+       }
+     }
+     .duration{
+       position: absolute;
+       bottom:2%;
+       right:3%;
+       padding:0.2rem 0.4rem;
+       border-radius: 0.3rem;
+       background:rgba(0,0,0,0.8);
+     }
+   }
+   &__right{
+     margin:0  0.3rem;
+     width:100%;
+     &__details{
+        display:flex;
+        justify-content: space-around;
+        margin:0;
+        padding:0;
+     }
+     &__channel{
+       margin:0.2rem;
+       padding:0;
+       p{
+          margin:0;
+          padding:0;
+          font-size: 0.9rem;
+       }
+       img{
+         width:40px;
+         height:40px;
+         border-radius:50%;
+         margin-right:0.4rem;
+         cursor:pointer;
+       }
+     }
+     &__title{
+       margin:0.3rem 0 0.1rem 0;
+       padding:0;
+       @include line-clamp(2);
+     }
+
+   }
+}
+@media (max-width:$breakpoint-medium){
+  .videoHorizontal{
+    margin:0 1rem;
+    &__left,&__right{
+      width:100%;
+    }
+    &__right{
+      margin-top:1rem;
+    }
+    &__left{
+      &__thumbnail{
+        width:100%;
+        height:16rem;
+        margin:0;
+        padding:0;
+      }
+    }
+
+  }
+
+
+}

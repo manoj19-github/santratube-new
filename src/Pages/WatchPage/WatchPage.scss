@@ -1,0 +1,15 @@
+@import "../../styles/_base.scss";
+
+.watchscreen{
+  margin-bottom:2rem;
+  &__player{
+    iframe{
+      height:70vh;
+      background: #353946;
+      width:100%;
+      margin-bottom: 2rem;
+
+    }
+
+  }
+}

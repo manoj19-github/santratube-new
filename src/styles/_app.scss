@@ -1,0 +1,24 @@
+@import "./_base.scss";
+.app__page{
+  overflow-x: hidden;
+
+}
+
+.app_container_parent{
+  display:flex;
+
+}
+.app__container{
+  display:flex;
+
+}
+.app__main{
+  margin-left: 13vw;
+  margin-top:10vh;
+}
+
+@media(max-width:$breakpoint-small){
+  .app__main{
+    margin-left:0;
+  }
+}

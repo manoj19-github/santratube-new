@@ -1,0 +1,28 @@
+@import "../../styles/_base.scss";
+.CategoriesBar{
+  padding:0.5rem 0.2rem;
+  font-size: 0.8rem;
+  display: flex;
+  overflow-x:scroll;
+  z-index:300;
+  background-color:$black-primary;
+  &::-webkit-scrollbar{
+    width:0px;
+  }
+  scrollbar-width:none;
+  div{
+    margin-right: 1rem;
+    padding:0.2rem 0.4rem;
+    white-space: nowrap;
+    border:1.5px solid $text-color;
+    border-radius:1rem;
+    &:hover{
+      background: #374a59;
+      color:$text-color;
+    }
+  }
+  div.active{
+    background: #374a59;
+    color:$text-color;
+  }
+}

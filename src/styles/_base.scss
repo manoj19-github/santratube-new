@@ -1,0 +1,40 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@500;600;700&family=Lato:ital,wght@0,400;1,300&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,800;1,200;1,300&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;1,100;1,200&family=Raleway:ital,wght@0,100;0,200;0,300;0,500;1,100&family=Roboto+Serif:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap');
+
+$text-color:#b1bdb4;
+$black-primary:#16181b;
+$black-secondary:#121417;
+$border-color:#4c4c4c;
+$breakpoint-sub-medium:750px;
+$breakpoint-medium:1224px;
+$breakpoint-small:520px;
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+.cursor-pointer{
+  cursor:pointer;
+}
+body{
+  background: $black-primary;
+
+  background-attachment:fixed;
+  color:$text-color;
+  font-family:"Roboto",sans-serif;
+  letter-spacing: 0.2px;
+
+}
+
+@mixin line-clamp($line){
+  overflow: hidden;
+  display:-webkit-box;
+  -webkit-line-clamp:$line;
+  -webkit-box-orient:vertical;
+}
+
+
+::-webkit-scrollbar{
+  width:0px;
+}

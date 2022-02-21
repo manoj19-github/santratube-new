@@ -1,0 +1,96 @@
+@import "../../styles/_base.scss";
+.videoMetaData{
+  width:100%;
+  margin-left: 0.5rem;
+  &__top{
+    width:100%;
+    margin-bottom:0.1rem;
+    padding:0.5rem 0;
+    h5{
+      font-size: 1rem;
+    }
+    &__statContainer{
+      &__data{
+        display:flex;
+        font-size: 0.7rem;
+        div:last-child{
+          margin-left:0.2rem;
+        }
+      }
+      &__like{
+        span{
+          cursor:pointer;
+          .like,.dislike{
+            margin-right:0.2rem;
+          }
+
+        }
+        span:last-child{
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+  &__channel{
+    width:100%;
+    border-top:0.2px solid $border-color;
+    border-bottom:0.2px solid $border-color;
+    padding:0.5rem 0;
+    margin-bottom:1rem;
+    .channelContainer{
+      width:100%;
+      img{
+        margin-right: 0.45rem;
+      }
+    }
+    button{
+      background-color: red;
+      color:#fff;
+      font-weight:500;
+      border-radius:0.2rem;
+      border:0;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      &:hover{
+        color:#fff;
+
+      }
+
+
+      &:focus{
+        outline:none;
+      }
+    }
+    .subscribed-btn{
+      background-color: gray !important;
+    }
+  }
+  &__description{
+    font-size:0.9rem;
+    white-space: pre-line;
+    border-bottom:0.2px solid $border-color;
+    padding:0.4rem 0;
+    .showMoreText{
+      text-decoration: none;
+      display: block;
+      margin: 1rem 0;
+      font-weight:500;
+      color:$border-color;
+    }
+  }
+}
+@media(max-width:$breakpoint-medium){
+  .channelContainer{
+    flex-direction: column;
+    img{
+      width:50%;
+      margin:0 2rem;
+    }
+    div{
+      margin-top: 1rem;
+    }
+  }
+  .videoMetaData__channel{
+    flex-direction: column;
+  }
+}
